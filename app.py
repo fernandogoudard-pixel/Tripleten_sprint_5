@@ -41,6 +41,16 @@ if graph_hist:
     tele = st.button('Histograma por telescópio')
     ano = st.button('Histograma por ano')
     if tele:
+        'Construindo Histrograma por Telescópio de Descoberta'
+        fig = px.histogram(df_exopl, 
+                            x='pl_rade', 
+                            color='disc_telescope',
+                            title=title,
+                            labels=labels,)
+        fig.update_layout(yaxis_title = 'Exoplanetas')
+        st.plotly_chart(fig,  width='stretch')
+    elif ano:
+        'Construindo Histrograma por Ano de Descoberta'
         fig = px.histogram(df_exopl, 
                             x='pl_rade', 
                             color='disc_year',
@@ -48,15 +58,8 @@ if graph_hist:
                             labels=labels,)
         fig.update_layout(yaxis_title = 'Exoplanetas')
         st.plotly_chart(fig,  width='stretch')
-    if ano:
-        fig = px.histogram(df_exopl, 
-                            x='pl_rade', 
-                            color='disc_year',
-                            title=title,
-                            labels=labels,)
-        fig.update_layout(yaxis_title = 'Exoplanetas')
-        st.plotly_chart(fig,  width='stretch')
-    if simples:
+    else:
+        'Construindo Histrograma Simples'
         fig = px.histogram(df_exopl, 
                             x='pl_rade',
                             title=title,
@@ -74,6 +77,7 @@ else:
     # sample para limitar a quantidade de itens no gráfico
     # durante testes tentar exibir mais de 1000 pontos no gráfico fez com que os pontos
     # ficassem invisiveis no streamlit
+    'Construindo grafico de dispersão'
     fig = px.scatter(df_exopl[(df_exopl['pl_orbper'] < 800)].sample(1000, random_state = 15), 
                     x='pl_rade',
                     y='pl_orbper',

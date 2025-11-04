@@ -6,6 +6,7 @@ https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbl
 
 Esse pequeno dashboard busca mostrar algumas relações interessantes que encontrei sobre os dados apresentados
 Ele está hospedado no Render e pode ser acessado pelo link:
+https://tripleten-sprint-5-avpx.onrender.com
 
 A idéia do dashboard é mostrar duas relações nos exoplanetas descobertos.
 A primeira é a relação entre raio do planeta e periodo orbital, no grafico de dispersão gerado podemos ver que quanto maior o raio menor o periodo orbital
