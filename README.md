@@ -11,4 +11,4 @@ https://tripleten-sprint-5-avpx.onrender.com
 A idéia do dashboard é mostrar duas relações nos exoplanetas descobertos.
 A primeira é a relação entre raio do planeta e periodo orbital, no grafico de dispersão gerado podemos ver que quanto maior o raio menor o periodo orbital
 
-A segunda é a relação entre os planetad descobertos, seu tamanho e ano/ telescópio que os descobriu, nos histogramas podemos ver que a maior parte dos planetas são bem pequenos, e a contribuição do telescópio kepler em encontrar a maior parte desses pequenos planetas.
+A segunda é a relação entre os planetas descobertos, seu tamanho e ano/ telescópio que os descobriu, nos histogramas podemos ver que a maior parte dos planetas são bem pequenos, e a contribuição do telescópio kepler em encontrar a maior parte desses pequenos planetas.
